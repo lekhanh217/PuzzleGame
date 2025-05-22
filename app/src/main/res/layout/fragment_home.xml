@@ -1,0 +1,165 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:fitsSystemWindows="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cslGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cslImgContainer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <ImageView
+                            android:id="@+id/imgMainImage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToOutline="true"
+                            android:background="@drawable/draw_home_image"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img22"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cslImgContainer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E9E4E4"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imgMainImage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToOutline="true"
+                            android:background="@drawable/draw_home_image"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowRadius="5"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:text="Conquer all \nPicture puzzles\nNow"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.05"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.16" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cslImgContainer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <ImageView
+                            android:id="@+id/imgMainImage3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/draw_home_image"
+                            android:clipToOutline="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anhdep3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    >
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/riv_dot1"
+                        android:layout_width="7dp"
+                        app:riv_oval="true"
+                        android:src="@color/grey_bold"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_height="match_parent"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/riv_dot2"
+                        android:layout_width="7dp"
+                        app:riv_oval="true"
+                        android:src="@color/grey"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_height="match_parent"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/riv_dot3"
+                        android:layout_width="7dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        app:riv_oval="true"
+                        android:src="@color/grey"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"
+                    android:indeterminateTint="#CECECE"
+                     />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvCategoryList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

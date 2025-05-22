@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    tools:context=".ui.PrepareGame">
+    <LinearLayout
+        android:id="@+id/llBarAction"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="100px"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:weightSum="100"
+        android:alpha="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="54"
+            android:elevation="100px" />
+
+        <ImageView
+            android:id="@+id/imgUpdateMusic"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:elevation="100px"
+            android:layout_marginTop="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_19"
+            app:tint="#503836"  />
+
+
+        <ImageView
+            android:id="@+id/imgUpdatePosition"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:elevation="100px"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="1dp"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_13"
+            app:tint="#0B80B4"  />
+
+
+        <ImageView
+            android:id="@+id/imgIcon_reset"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:elevation="100px"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="1dp"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img"
+            app:tint="#03A9F4"  />
+        <ImageButton
+            android:id="@+id/ibnHideElement"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:elevation="100px"
+            android:layout_marginStart="9dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_7"
+            app:tint="#0C5B7A" />
+
+        <ImageButton
+            android:id="@+id/imbChangeBackground"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="8"
+            android:layout_gravity="center_vertical"
+            android:elevation="100px"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="8dp"
+            app:tint="@color/grey"
+            android:src="@drawable/img_3" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clOriginalImg"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385"
+        >
+        <ImageView
+            android:id="@+id/imgPicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:alpha="0.3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.385" />
+        <ImageView
+            android:id="@+id/imgbackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background4"
+            android:alpha="0.3"
+            app:tint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:progressDrawable="@drawable/progress_bar_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clOriginalImg" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game is initializing, please wait"
+        android:textColor="#ECF5FA"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

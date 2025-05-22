@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_marginStart="20dp"
+    android:background="@color/dialogLightBackground"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting music"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/llMusicGroup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llUncheckMusic"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/img_21" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Uncheck"
+                    android:textSize="9dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMusic1"
+                android:layout_width="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/img_19"
+                    app:tint="@color/black" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="music 1"
+                    android:textSize="9dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llMusic2"
+                android:layout_width="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    app:tint="@color/black"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/img_19"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="music 2"
+                    android:textSize="9dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llMusic3"
+                android:layout_width="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    app:tint="@color/black"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/img_19"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="music 3"
+                    android:textSize="9dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+            <CheckBox
+                android:id="@+id/cbAddVibrate"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="vibrate while playing"
+                android:gravity="center|start"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="35dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancelDialog"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="25dp"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:text="Cancel"
+                android:textColor="#03A9F4"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdateMusic"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="25dp"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:text="OK"
+                android:textColor="#03A9F4"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

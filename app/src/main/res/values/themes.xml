@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Puzzle_Pieces" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="Theme.Puzzle_Pieces" parent="Base.Theme.Puzzle_Pieces" />
+
+    <style name="CustomTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@android:color/black</item> <!-- Màu text khi chọn tab -->
+        <item name="tabIndicatorColor">@android:color/transparent
+        </item> <!-- Tắt chỉ báo dưới tab -->
+    </style>
+
+</resources>

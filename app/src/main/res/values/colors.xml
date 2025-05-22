@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="mainBlackMode">#090A12</color>
+    <color name="mainLightMode">#F4F4F4</color> /
+    <color name="drakBlue">#111326</color>
+    <color name="blue_bold">#191C37</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_smoke">#F5F5F5</color>
+    <color name="lightGrey">#E3E6E5</color>
+    <color name="darkRed">#F44336</color>
+    <color name="no">#89AEB2</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue">#03A9F4</color>
+    <color name="lightYellow">#FFEB3B</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="purple">#603C9E</color>
+    <color name="grey">#E6E6E6</color>
+    <color name="grey_bold">#B6B6B6</color>
+    <color name="grey_tab">#868686</color>
+    <color name="dialogLightBackground">#FAFAFA</color>
+</resources>
